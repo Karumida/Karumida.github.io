@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <head>
+        
+        <title>Granblue Academy</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>      
+        <div id="mySidenav" class="sidenav" >
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="https://gbf.wiki/Main_Page" target="_blank">Granblue Fantasy Wiki</a>
+        <a href="https://www.youtube.com/@user-cl4gn4iu4s" target="_blank">Granblue Fantasy Youtube</a>
+        <a href="https://www.youtube.com/playlist?list=PL6uLzlPKqUEd2SkJXnibG3IxEIHwLEGjG">Granblue University</a>
+      </div>
+      <div id="main">
+        <span style=" display: inline-block; cursor:pointer" onclick="openNav()">
+            <img src="Images/Granbluelogo.png" width="150" >
+        </span>
+        <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+              document.getElementById("main").style.marginLeft = "250px";
+              document.getElementById("mySidenav").style.opacity = "80%";
+              document.getElementById("main").style.opacity = 0.5;
+              document.getElementById("Bottomnav").style.opacity=0;
+              document.getElementById("playtab").style.opacity=0;
+              document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";
+              document.getElementById("main").style.opacity = "100%";
+              document.getElementById("Bottomnav").style.opacity="100%";
+              document.getElementById("playtab").style.opacity="100%";
+              document.body.style.backgroundColor = "white";
+            }
+            </script>   
+    </div>
+    <div id="playtab" class="botimage">
+      <a href="https://game.granbluefantasy.jp/" target="_blank">
+      <img src="Images/linktab_playnow.png" style="bottom: 0px;">
+    </a>
+    </div>
+    <div class="botimageright">
+        <a href="https://web.facebook.com/karl.cabral.14/" target="_blank">
+            <img src="Images/fb.png" style="bottom: 0px;" width="75">
+          </a>
+          <a href="https://twitter.com/KKarumida" target="_blank">
+            <img src="Images/twit.png" style="bottom: 0px;" width="75">
+          </a>
+    </div>
+    <div id="Bottomnav" class="botnavbar">
+        <ul>
+            <li style="color: #f1f1f1;">
+                <p style="text-align: center";>
+               <a href="cabralkarlanthony_bsit@plmun.edu.ph"> 
+                cabralkarlanthony_bsit@plmun.edu.ph
+               </a>
+            </p>
+            </li>
+        </ul>
+    </div>
+
+    </body>
+</html>
